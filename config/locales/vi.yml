@@ -1,1 +1,21 @@
 vi:
+  layouts:
+    header:
+      logo: "SUN *"
+      language: "Ngôn ngữ"
+      english: "Tiếng Anh"
+      vietnam: "Tiếng Việt"
+      login: "Đăng nhập"
+      about: "Thông tin"
+      help: "Hỗ trợ"
+      home: "Trang chủ"
+    footer:
+      content: " @ 2019 Sun* Inc. All rights reserved. "
+  static_pages:
+    home:
+      title: "Trang chủ"
+      hello: "Xin chào tất cả mội người"
+      topic: "HÃY THAM GIA VỚI CHÚNG TÔI & KIẾM NHỮNG ĐIỀU TUYỆT VỜI"
+      description: "Hãy tưởng tượng ra một thế giới nơi tất cả mọi người đều được tự do tạo ra những giá trị tuyệt vời, có sức mạnh thay đổi cuộc sống. Chúng tôi theo đuổi đam mê của chính mình, cùng nhìn về tương lai. Không chỉ tồn tại, chúng tôi sống để thực hiện hóa những ước mơ.
+Tại Sun*, tất cả các thành viên luôn nỗ lực đem đến lựa chọn tốt hơn cho mọi người. Đứng ở điểm giao thoa giữa công nghệ, kinh doanh và giáo dục, chúng tôi sẽ mang lại sự thay đổi tích cực
+cho toàn xã hội."

@@ -1,0 +1,118 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
+
+.navbar {
+  background-color: $bg-navbar;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar .logo a {
+  color: $red;
+}
+
+.navbar a {
+  color: $white;
+  float: right;
+  font-size: 17px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: $black;
+}
+
+.dropbtn {
+  background-color: $bg-navbar;
+  border: none;
+  color: $white;
+  font-size: 17px;
+  padding: 12px;
+}
+
+.dropdown {
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: $bg-drop-content;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  display: none;
+  min-width: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: $black;
+  display: block;
+  float: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: $bg-drop-content-hover;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    display: block;
+    float: none;
+  }
+}
+
+.home_body {
+  background-image: url("home_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 535px;
+  text-align: center;
+}
+
+.home_body h1 {
+  color: $white;
+  margin-top: 0;
+  padding: 50px;
+}
+
+.home_body h2 {
+  color: $white;
+}
+
+.home_body p {
+  color: $white;
+  padding: 10px;
+}
+
+.footer {
+  background: #292c2f;
+  border-top: 0 solid $white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer p.center {
+  color: $white;
+  padding-top: 6px;
+  text-align: center;
+}

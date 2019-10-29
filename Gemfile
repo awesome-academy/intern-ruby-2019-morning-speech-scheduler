@@ -3,6 +3,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.0"
 
+gem "bootstrap-sass"
 gem "config"
 gem "jbuilder", "~> 2.7"
 gem "puma", "~> 3.11"
