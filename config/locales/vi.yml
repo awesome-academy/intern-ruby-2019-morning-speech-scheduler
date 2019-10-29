@@ -19,3 +19,27 @@ vi:
       description: "Hãy tưởng tượng ra một thế giới nơi tất cả mọi người đều được tự do tạo ra những giá trị tuyệt vời, có sức mạnh thay đổi cuộc sống. Chúng tôi theo đuổi đam mê của chính mình, cùng nhìn về tương lai. Không chỉ tồn tại, chúng tôi sống để thực hiện hóa những ước mơ.
 Tại Sun*, tất cả các thành viên luôn nỗ lực đem đến lựa chọn tốt hơn cho mọi người. Đứng ở điểm giao thoa giữa công nghệ, kinh doanh và giáo dục, chúng tôi sẽ mang lại sự thay đổi tích cực
 cho toàn xã hội."
+    help:
+      title: "Trang trợ giúp"
+      topic: "Các câu hỏi thường gặp"
+      question_1: "TEMPLATED là gì"
+      answer_1: "TEMPLATED là một tập hợp các mẫu trang web CSS, HTML5 và phản hồi miễn phí, được cấp phép Creative Commons, được thiết kế và xây dựng bởi Cherry, Doni, AJ , và đôi khi là những người bạn tốt của chúng tôi là Rafi (thiết kế) và Eduardo (mã)."
+      question_2: "Mẫu trang web là gì?"
+      answer_2: "Một điểm khởi đầu cho một trang web. Thường bao gồm ít nhất một hoặc nhiều tệp HTML , biểu định kiểu và tùy chọn một vài hình ảnh và tập lệnh hỗ trợ . HTML là nơi chứa nội dung của bạn (ví dụ: văn bản và ảnh), trong khi phần còn lại xử lý việc trình bày nội dung đó. Xem bài viết này để được giải thích tuyệt vời về cách thức này hoạt động."
+      question_3: "Mẫu HTML5 đáp ứng là gì?"
+      answer_3: "Một loại mẫu trang web đặc biệt 1. được xây dựng trên HTML5 (tiêu chuẩn HTML mới nhất) và 2. được thiết kế để đáp ứng kích thước màn hình của bạn và mang lại trải nghiệm tối ưu nhất cho nó. Nó thực hiện điều này bằng cách tự động chuyển đổi giữa các khối quy tắc CSS mà mỗi mục tiêu là một phạm vi kích thước màn hình cụ thể."
+      question_4: "Làm thế nào tôi được phép sử dụng chúng?"
+      answer_4: "Tất cả các tiện ích miễn phí của chúng tôi đều được cấp phép theo giấy phép Ghi nhận tác giả Creative Commons , vì vậy về cơ bản mọi thứ (ngay cả nội dung thương mại). Cuộc đuổi bắt? Chỉ cần cung cấp cho chúng tôi một khoản tín dụng có thể nhìn thấy ở đâu đó trên trang web (như trang tín dụng hoặc một cái gì đó)."
+      question_5: "Một ứng dụng tốt để làm việc với những gì?"
+      answer_5: "Hầu như bất kỳ trình soạn thảo văn bản nào (ví dụ: Notepad) sẽ thực hiện công việc, nhưng một trình soạn thảo mã chuyên dụng như Atom hoặc Sublime Text sẽ mang lại trải nghiệm phong phú hơn và rất nhiều tính năng mã hóa hữu ích (như tô sáng cú pháp)."
+      question_6: "Các kỹ năng HTML / CSS của tôi là (hơi thô sơ | thực tế không tồn tại). Lời khuyên nào?"
+      answer_6: "Tài liệu tham khảo HTML và CSS của Sitepoint là nơi tuyệt vời để bắt đầu. Ngoài ra còn có các tài nguyên đào tạo HTML rất riêng của W3 ."
+      question_7: "Khung nào hỗ trợ các mẫu HTML5 đáp ứng của bạn?"
+      answer_7: "Công cụ phản hồi của chúng tôi chủ yếu dựa vào CSS vanilla, nhưng chúng tôi sử dụng một số tính năng của Skel để thuận tiện (ví dụ: đặt lại và quản lý điểm dừng). Nếu bạn chưa từng sử dụng nó trước đây, hãy chắc chắn kiểm tra tài liệu của nó ."
+      question_8: "Tại sao anh làm điều này?"
+      answer_8: "Thực hành! Miễn phí là một cách tuyệt vời để thử nghiệm các ý tưởng mới ngẫu nhiên, và vì một số trong số chúng thực sự có thể hữu ích với người mà chúng tôi cho là phát hành chúng (theo giấy phép cho phép như CCA) là một điều tốt."
+      question_9: "Có cách nào tôi có thể thoát khỏi tín dụng của bạn? Trường hợp sử dụng cụ thể của tôi loại nhu cầu nó."
+      answer_9: "Chắc chắn, kiểm tra dưới cùng của trang giấy phép của chúng tôi ."
+      any_question: Bạn có còn câu hỏi nào nữa không?
+      click: Click vào đây
+      mail: và mail cho chúng tôi.
