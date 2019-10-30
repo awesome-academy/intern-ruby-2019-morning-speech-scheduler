@@ -104,6 +104,75 @@
   padding: 10px;
 }
 
+.help_body {
+  background-image: url("faq.jpg");
+  border-radius:4px;
+}
+
+.help_body h1 {
+  text-align: center;
+  margin: 0 0 0;
+  padding-top: 80px;
+}
+
+.help_body h2 {
+  padding: 50px 80px 50px 80px;
+}
+
+.help_body {
+  .accordion {
+    padding: 0 80px 50px 80px;
+
+    .card {
+      border: .1rem solid $grey;
+      border-radius: .4rem;
+      margin: 0 0 1.5rem;
+      overflow: hidden;
+
+      .card-header {
+        border: none;
+        padding: 0;
+
+        button {
+          background: $primary url('minus-icon') no-repeat 98.5% center / 30px;
+          color: $white;
+          font-size: 2rem;
+          padding: 1rem 0;
+          width: 100%;
+
+          span {
+            display: block;
+            margin: 0 4rem 0 1.5rem;
+          }
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+
+          &.collapsed {
+            background: $white url('add-icon.png') no-repeat 98% center / 18px 18px;
+            color: $primary;
+          }
+        }
+      }
+
+      .card-body {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .05rem;
+        line-height: 155%;
+      }
+    }
+  }
+
+  .support-text {
+    font-size: 1.6rem;
+    margin: 0;
+    letter-spacing: .05rem;
+  }
+}
+
 .footer {
   background: #292c2f;
   border-top: 0 solid $white;

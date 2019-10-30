@@ -1,0 +1,159 @@
+<%= provide :title, t(".title") %>
+<div class="help_body">
+  <h1><%= t ".title" %></h1>
+  <h2><%= t ".topic" %></h2>
+  <div class="accordion" id="accordionFAQ">
+  <div class="card">
+    <div class="card-header" id="heading1">
+      <button class="" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        <span>
+          <%= t ".question_1" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_1" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading2">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        <span>
+          <%= t ".question_2" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_2" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading3">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        <span>
+          <%= t ".question_3" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_3" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading4">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        <span>
+          <%= t ".question_4" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_4" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading5">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        <span>
+          <%= t ".question_5" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_5" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading6">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        <span>
+          <%= t ".question_6" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_6" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading7">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        <span>
+          <%= t ".question_7" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_7" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading8">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        <span>
+          <%= t ".question_8" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_8" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading9">
+      <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+        <span>
+          <%= t ".question_9" %>
+        </span>
+      </button>
+    </div>
+
+    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionFAQ">
+      <div class="card-body">
+        <%= t ".answer_9" %>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="text-right support-text">
+  <p>
+    <%= t ".any_question" %>
+    <%= link_to t(".click"), "#" %>
+    <%= t ".mail" %>
+  </p>
+</div>
+</div>

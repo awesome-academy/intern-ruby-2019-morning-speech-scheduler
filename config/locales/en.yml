@@ -19,3 +19,27 @@ en:
       description: "Imagine a world where everyone is free to create great values, have the power to change lives. We pursue our own passion, look to the future together. No only exist, we live to realize dreams.
 At Sun *, all members strive to make better choices for everyone. Standing at the intersection of technology, business and education, we will bring about positive change
 for the whole society. "
+    help:
+      title: "Help page"
+      topic: "Frequently Asked Questions"
+      question_1: "What is TEMPLATED?"
+      answer_1: "TEMPLATED is a collection of free, Creative Commons-licensed CSS, HTML5, and responsive site templates, designed and built by Cherry, Doni, AJ, and occasionally our good friends Rafi (design) and Eduardo (code)."
+      question_2: "What is a Site Template?"
+      answer_2: "A starting point for a website. Usually consists of at least one or more HTML files, a stylesheet, and optionally a few support images and scripts. The HTML is where your content lives (eg. text and photos), while the rest of the stuff handles the presentation of that content. See this article for a great explanation on how this works."
+      question_3:  "What is a Responsive HTML5 Template?"
+      answer_3: "A special kind of site template that's 1. built on HTML5 (the latest HTML standard), and 2. designed to respond to the size of your screen and deliver the experience most optimal for it. It does this by automatically switching between blocks of CSS rules that each target a specific range of screen size."
+      question_4: "How am I allowed to use them?"
+      answer_4: All of our freebies are licensed under the Creative Commons Attribution license, so basically anything (even commercial stuff). The catch? Just give us a visible credit somewhere on the site (like a credits page or something).
+      question_5: "What's a good app to work with these?"
+      answer_5: "Almost any text editor (eg. Notepad) will do the job, but a dedicated code editor like Atom or Sublime Text will offer a much richer experience and a ton of useful coding features (like syntax highlighting)."
+      question_6: "My HTML/CSS skills are (a bit rusty|practically nonexistent). Any tips?"
+      answer_6: "Sitepoint's HTML and CSS references are great places to start. There's also the W3's very own HTML training resources."
+      question_7: "What framework powers your responsive HTML5 templates?"
+      answer_7: "Our responsive stuff relies mostly on vanilla CSS, but we do use some features of Skel for convenience (eg. resets and breakpoint management). If you've never used it before, be sure to check out its documentation."
+      question_8: "Why are you doing this?"
+      answer_8: "Practice! Freebies are a great way to experiment with random new ideas, and as some of them might actually end up being useful to someone we figure releasing them (under a permissive license like the CCA) is a good thing."
+      question_9: "Is there any way I can get out of crediting you? My particular use case kind of needs it."
+      answer_9: "Sure, check out the bottom of our license page."
+      any_question: Do you have more questions?
+      click: Click here
+      mail: and mail us.
