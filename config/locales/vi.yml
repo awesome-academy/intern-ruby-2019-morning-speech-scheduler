@@ -12,6 +12,27 @@ vi:
       logout: "Đăng xuất"
     footer:
       content: " @ 2019 Sun* Inc. All rights reserved. "
+  password_resets:
+    new:
+      title: "Gửi mail đặt lại mật khẩu"
+      email: "Email"
+      pl_email: "Vui lòng nhập vào email"
+      submit: "Gửi"
+    create:
+      success: "Email được gửi với hướng dẫn đặt lại mật khẩu."
+      error: "Email is incorrect."
+    edit:
+      title: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      pl_password: "Vui lòng nhập vào mật khẩu mới"
+      confirmation: "Xác nhận mật khẩu"
+      pl_confirmation: "Vui lòng nhập lại mật khẩu mới"
+      submit: "Đặt lại"
+      expired: Đặt lại mật khẩu đã quá hạn
+      not_valid: Đường dẫn đặt lại mật khẩu không chính xác
+      error: Lỗi - Không tìm thấy người dùng
+    update:
+      success: Mật khẩu đã được đặt lại thành công.
   sessions:
     new:
       title: "Đăng nhập"
@@ -21,12 +42,17 @@ vi:
       password: "Mật khẩu"
       login: "Đăng nhập"
       check_box: "Hãy nhớ tôi trên máy tính này"
+      reset_password: "Đặt lại mật khẩu"
     create:
       many_login: "Lỗi đăng nhập. Vui lòng đóng trình duyệt và thử lại."
       success: "Đăng nhập thành công"
       error: "Đăng nhập thất bại. Email hoặc mật khẩu không chính xác"
     destroy:
       warning: "Bạn chưa đăng nhập nên không thể đăng xuất. Bạn có thể đăng nhập lại tại đây"
+  shared:
+    error_messages:
+      head: Biểu mẫu chứa
+      error: lỗi
   static_pages:
     home:
       title: "Trang chủ"
@@ -68,3 +94,13 @@ cho toàn xã hội."
       header-h2-2: "KHÁCH HÀNG"
       header-h3-2: "Trusted by some of the world’s leading brands."
       content-2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero vel ex maximus vulputate nec eu ligula. Vestibulum elementum nisi ut fermentum lobortis. Sed quis iaculis felis."
+  mailers:
+    user_mailer:
+      hi: "xin chào"
+      reset_subject: Đặt lại mật khẩu
+  user_mailer:
+    password_reset:
+      title: Đặt lại mật khẩu
+      to_reset: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
+      time_expire: Liên kết này sẽ hết hạn trong hai giờ.
+      des: Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.
