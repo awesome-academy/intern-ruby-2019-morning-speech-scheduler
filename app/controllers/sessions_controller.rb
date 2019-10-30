@@ -10,6 +10,12 @@ class SessionsController < ApplicationController
 
       if user&.authenticate params[:session][:password]
         login_as user
+
+        if params[:session][:remember_me] == Settings.sessions.remember
+          remember user
+        else
+          forget user
+        end
         flash[:success] = t ".success"
         redirect_to root_url
       else

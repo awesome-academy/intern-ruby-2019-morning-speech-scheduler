@@ -20,6 +20,7 @@ en:
       pl_password: "Please enter your password"
       password: "Password"
       login: "Login"
+      check_box: "Remember me on this computer"
     create:
       many_login: "Login error. Please close the browser and try again."
       success: "Logged in successfully"

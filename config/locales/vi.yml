@@ -20,6 +20,7 @@ vi:
       pl_password: "Vui lòng nhập vào mật khẩu"
       password: "Mật khẩu"
       login: "Đăng nhập"
+      check_box: "Hãy nhớ tôi trên máy tính này"
     create:
       many_login: "Lỗi đăng nhập. Vui lòng đóng trình duyệt và thử lại."
       success: "Đăng nhập thành công"
