@@ -1,9 +1,10 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :reset_token
-
-  PASSWORD_PARAMS = %i(password password_confirmation).freeze
   UPDATE_PARAMS = %i(name).freeze
   PASSWORD_PARAMS = %i(password password_confirmation).freeze
+
+  attr_accessor :remember_token, :reset_token
+
+  has_many :calendars, dependent: :destroy
 
   validates :name, presence: true,
     length: {minimum: Settings.user.name.min_length,
@@ -14,7 +15,9 @@ class User < ApplicationRecord
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
     length: {minimum: Settings.user.password.min_length,
-      maximum: Settings.user.password.max_length}
+      maximum: Settings.user.password.max_length}, allow_nil: true
+
+  scope :last_speech_asc, -> {order last_speech: :asc}
 
   has_secure_password
 

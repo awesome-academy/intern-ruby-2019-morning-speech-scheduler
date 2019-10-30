@@ -284,6 +284,7 @@
   }
 
   .btn {
+    background: $sliver;
     display: block;
     margin: 60px auto 0 auto;
     width: 100%;
@@ -429,7 +430,7 @@ ul.foot-nav a {
 }
 
 .list-group-item {
-  padding: 10px 10px 30px;
+  padding: 15px 10px 35px;
 }
 
 a.btn-update {
@@ -437,4 +438,27 @@ a.btn-update {
   hight: 30px;
   padding: 7px;
   width: 80px;
+}
+
+#calendar {
+  .fc-today {
+    background: $aqua !important;
+  }
+
+  .fc-sun {
+    background: $sliver;
+  }
+
+  .fc-sat {
+    background: $sliver;
+  }
+
+  .fc-day-grid-event {
+    padding: 1px;
+  }
+
+  .fc-content {
+    font-size: 13px;
+    white-space: inherit;
+  }
 }

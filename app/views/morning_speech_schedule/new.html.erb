@@ -1,0 +1,25 @@
+<%= provide :title, t(".title") %>
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= t ".title" %></div>
+  <div class="panel-body">
+    <div class="row">
+      <%= form_with url: morning_speech_schedule_index_path, html: {method: :post}, data: {remote: "false"} do |f| %>
+        <ul class="list-group col-md-8 col-md-offset-2">
+          <li class="list-group-item">
+              <%= f.label :start, t(".start") %>, :
+              <%= f.date_field :start, min: Date.today, class: "form-control" %>
+          </li>
+          <li class="list-group-item">
+              <%= f.label :end, t(".end") %> :
+              <%= f.date_field :end, min: Date.today, class: "form-control" %>
+          </li>
+          <li class="list-group-item">
+            <div class="col-md-4 col-md-offset-5">
+              <%= f.submit t(".submit"), class: "btn btn-primary" %>
+            </div>
+          </li>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -15,6 +15,8 @@ vi:
       failed: "Lỗi - Không thể thay đổi mật khẩu"
       error: "Lỗi - Không tìm thấy người dùng"
       not_access: "Bạn không có quyền truy cập trang này"
+  calendar:
+    ms: "morning speech"
   layouts:
     header:
       logo: "SUN *"
@@ -52,6 +54,24 @@ vi:
       error: Lỗi - Không tìm thấy người dùng
     update:
       success: Mật khẩu đã được đặt lại thành công.
+    sidebar:
+      dashboard: "Bảng điều khiển"
+      calendar: "Lịch"
+      create_schedule: "Tạo lịch morning speech"
+    footer:
+      content: " @ 2019 Sun* Inc. All rights reserved. "
+  morning_speech_schedule:
+    index:
+      title: "Lịch chung"
+      calendar: "Lịch"
+    new:
+      title: "Taọ mới lịch morning speech"
+      start: "Thời gian bắt đầu"
+      end: "Thời gian kết thúc"
+      submit: "Tạo"
+    create:
+      success: "Lịch morning speech được tạo thành công"
+      failed: "Lỗi - không thể tạo được lịch morning speech"
   sessions:
     new:
       title: "Đăng nhập"
