@@ -1,0 +1,18 @@
+<div class="navbar">
+  <div class="logo">
+    <%= link_to t(".logo"), "#" %>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-fw fa-wrench"></i><%= t ".language" %>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <%= link_to t(".english"), locale:"en" %>
+      <%= link_to t(".vietnam"), locale:"vi" %>
+    </div>
+  </div>
+  <%= link_to raw("<i class='fa fa-fw fa-user'></i>" + t(".login")), "#" %>
+  <%= link_to raw("<i class='fa fa-info-circle'></i>" + t(".about")), "#" %>
+  <%= link_to raw("<i class='fa fa-question-circle'></i>" + t(".help")), "#" %>
+  <%= link_to raw("<i class=' fa fa-fw fa-home'></i>" + t(".home")), root_path %>
+</div>

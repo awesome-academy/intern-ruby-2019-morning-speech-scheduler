@@ -1,1 +1,21 @@
 en:
+  layouts:
+    header:
+      logo: "SUN *"
+      language: "Language"
+      english: "English"
+      vietnam: "VietNamese"
+      login: "Login"
+      about: "About"
+      help: "Help"
+      home: "Home"
+    footer:
+      content: " @ 2019 Sun* Inc. All rights reserved. "
+  static_pages:
+    home:
+      title: "Home page"
+      hello: "Hello, world."
+      topic: "JOIN US & MAKE AWESOME THINGS THAT MATTER"
+      description: "Imagine a world where everyone is free to create great values, have the power to change lives. We pursue our own passion, look to the future together. No only exist, we live to realize dreams.
+At Sun *, all members strive to make better choices for everyone. Standing at the intersection of technology, business and education, we will bring about positive change
+for the whole society. "
