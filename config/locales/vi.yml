@@ -43,3 +43,12 @@ cho toàn xã hội."
       any_question: Bạn có còn câu hỏi nào nữa không?
       click: Click vào đây
       mail: và mail cho chúng tôi.
+    about:
+      title: "Trang giới thiệu"
+      header: "Giới thiệu"
+      header-h2-1: "CÁI GÌ CHÚNG TÔI"
+      header-h3-1: "Lorem ipsum - dolor"
+      content-1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero vel ex maximus vulputate nec eu ligula. Vestibulum elementum nisi ut fermentum lobortis. Sed quis iaculis felis."
+      header-h2-2: "KHÁCH HÀNG"
+      header-h3-2: "Trusted by some of the world’s leading brands."
+      content-2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero vel ex maximus vulputate nec eu ligula. Vestibulum elementum nisi ut fermentum lobortis. Sed quis iaculis felis."

@@ -43,3 +43,12 @@ for the whole society. "
       any_question: Do you have more questions?
       click: Click here
       mail: and mail us.
+    about:
+      title: "About page"
+      header: "About Us"
+      header-h2-1: "WHAT DRIVES US"
+      header-h3-1: "Lorem ipsum - dolor"
+      content-1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero vel ex maximus vulputate nec eu ligula. Vestibulum elementum nisi ut fermentum lobortis. Sed quis iaculis felis."
+      header-h2-2: "CUSTOMERS"
+      header-h3-2: "Trusted by some of the world’s leading brands."
+      content-2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero vel ex maximus vulputate nec eu ligula. Vestibulum elementum nisi ut fermentum lobortis. Sed quis iaculis felis."
