@@ -2,7 +2,11 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :reset_token
 
   PASSWORD_PARAMS = %i(password password_confirmation).freeze
+  UPDATE_PARAMS = %i(name).freeze
 
+  validates :name, presence: true,
+    length: {minimum: Settings.user.name.min_length,
+      maximum: Settings.user.name.max_length}
   validates :password, presence: true,
     length: {minimum: Settings.user.password.min_length,
       maximum: Settings.user.password.max_length}

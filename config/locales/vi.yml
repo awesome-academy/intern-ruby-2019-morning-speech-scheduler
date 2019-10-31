@@ -112,3 +112,12 @@ cho toàn xã hội."
       name: "Tên"
       email: "Email"
       group: "Nhóm"
+    edit:
+      title: "Cập nhật thông tin người dùng"
+      name: "Tên"
+      pl_email: "Vui lòng nhập vào tên người dùng"
+      submit: "Cập nhật"
+    update:
+      success: "Cập nhật thông tin người dùng thành công."
+      failed: ""
+      not_access: ""
