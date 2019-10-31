@@ -2,6 +2,7 @@ class Calendar < ApplicationRecord
   belongs_to :user
 
   scope :calendar_speech, -> {where tag: Settings.calendars.tag.speech}
+  scope :day_desc, -> {order day: :desc}
 
   class << self
     def new_ms_schedule weekdays
@@ -17,5 +18,10 @@ class Calendar < ApplicationRecord
       rescue
         false
     end
+  end
+
+  def update_last_speech
+    last_calendar = user.calendars.day_desc.first
+    user.update_attribute :last_speech, last_calendar&.day
   end
 end

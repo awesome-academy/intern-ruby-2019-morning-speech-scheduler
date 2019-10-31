@@ -4,12 +4,12 @@
       <h3><%= t ".morning_speech" %></h3>
     </div>
     <ul class="list-unstyled components">
-      <%= link_to t(".dashboard") %>
+      <li><%= link_to t(".dashboard"), morning_speech_schedule_index_path %></li>
       <li>
-        <%= link_to t(".topic1"), "#Topic1Submenu", data: {toggle: "collapse"}, aria: {expanded: "false"}, class: "dropdown-toggle" %>
+        <%= link_to t(".calendar"), "#Topic1Submenu", data: {toggle: "collapse"}, aria: {expanded: "false"}, class: "dropdown-toggle" %>
         <ul class="collapse list-unstyled" id="Topic1Submenu">
           <li>
-            <%= link_to t(".sub1_topic1"), "#" %>
+            <%= link_to t(".create_schedule"), new_morning_speech_schedule_path %>
           </li>
           <li>
             <%= link_to t(".sub2_topic1"), "#" %>
