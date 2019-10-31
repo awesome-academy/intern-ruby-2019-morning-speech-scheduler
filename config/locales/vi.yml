@@ -104,3 +104,11 @@ cho toàn xã hội."
       to_reset: "Để đặt lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
       time_expire: Liên kết này sẽ hết hạn trong hai giờ.
       des: Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.
+  users:
+    show:
+      title: "Thông tin người dùng"
+      change: "Thay đổi"
+      info: "Thông tin chung"
+      name: "Tên"
+      email: "Email"
+      group: "Nhóm"

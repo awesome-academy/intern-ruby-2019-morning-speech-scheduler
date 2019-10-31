@@ -253,7 +253,7 @@
   margin: 0;
 }
 
-.page-login{
+.page-login {
   background-image: url('login.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -319,4 +319,122 @@ label.checkbox-inline {
     font-size: 13px;
     margin: 0 0 20px;
   }
+}
+
+.wrapper {
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background: $bg-sidebar;
+  color: $white;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+}
+
+.sidebar.active {
+  margin-left: -250px;
+}
+
+.sidebar .sidebar-header {
+  background: $bg-sub-sidebar;
+  padding: 20px;
+}
+
+.sidebar ul.components {
+  border-bottom: 1px solid $white;
+  padding: 20px 0;
+}
+
+.sidebar ul p {
+  color: $white;
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.sidebar ul li a:hover {
+  background: $sky-blue;
+  color: $white;
+}
+
+.sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  background: $bg-sidebar;
+  color: $white;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+ul ul a {
+  background: $bg-sub-sidebar;
+  font-size: 0.9em;
+  padding-left: 30px !important;
+}
+
+ul.foot-nav {
+  padding: 20px;
+}
+
+ul.foot-nav a {
+  border-radius: 5px;
+  display: block;
+  font-size: 0.9em !important;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.container-fluid {
+  background: $white;
+  padding: 0;
+}
+
+.sidebarCollapse {
+  background: $white;
+}
+
+.sidebarCollapse.btn {
+  background: $white;
+}
+
+.container-fluid.content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.list-group-item {
+  padding: 10px 10px 30px;
+}
+
+a.btn-update {
+  background: $blue;
+  hight: 30px;
+  padding: 7px;
+  width: 80px;
 }
