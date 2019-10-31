@@ -1,10 +1,29 @@
 vi:
+  changes_password:
+    edit:
+      title: "Thay đổi mật khẩu"
+      password_old: "Mật khẩu cũ"
+      pl_password_old: "Vui lòng nhập vào mật khẩu cũ"
+      password: "Mật khẩu mới"
+      pl_password: "Vui lòng nhập vào mật khẩu mới"
+      password_conf: "Xác nhận mất khẩu"
+      pl_password_conf: "Vùi lòng xác nhận lại mật khẩu mới"
+      submit: "Thay đổi"
+    update:
+      empty: "không thể rỗng"
+      success: "Thay đổi mật khẩu thành công."
+      failed: "Lỗi - Không thể thay đổi mật khẩu"
+      error: "Lỗi - Không tìm thấy người dùng"
+      not_access: "Bạn không có quyền truy cập trang này"
   layouts:
     header:
       logo: "SUN *"
       language: "Ngôn ngữ"
       english: "Tiếng Anh"
       vietnam: "Tiếng Việt"
+      profile: "Hồ sơ cá nhân"
+      update_profile: "Chỉnh sửa hồ sơ cá nhân"
+      change_password: "Thay đổi mật khẩu"
       login: "Đăng nhập"
       about: "Thông tin"
       help: "Hỗ trợ"
@@ -119,5 +138,5 @@ cho toàn xã hội."
       submit: "Cập nhật"
     update:
       success: "Cập nhật thông tin người dùng thành công."
-      failed: ""
-      not_access: ""
+      failed: "Lỗi - Không thể cập nhật thông tin người dùng"
+      not_access: "Bạn không có quyền truy cập trang này"

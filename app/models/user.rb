@@ -3,10 +3,15 @@ class User < ApplicationRecord
 
   PASSWORD_PARAMS = %i(password password_confirmation).freeze
   UPDATE_PARAMS = %i(name).freeze
+  PASSWORD_PARAMS = %i(password password_confirmation).freeze
 
   validates :name, presence: true,
     length: {minimum: Settings.user.name.min_length,
       maximum: Settings.user.name.max_length}
+  validates :email, presence: true,
+    length: {maximum: Settings.user.email.max_length},
+    format: {with: Settings.user.email.regex_valid},
+    uniqueness: {case_sensitive: false}
   validates :password, presence: true,
     length: {minimum: Settings.user.password.min_length,
       maximum: Settings.user.password.max_length}

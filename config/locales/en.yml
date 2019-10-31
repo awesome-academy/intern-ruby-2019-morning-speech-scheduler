@@ -1,10 +1,29 @@
 en:
+  changes_password:
+    edit:
+      title: "Change Password"
+      password_old: "Old Password"
+      pl_password_old: "Please enter your old password"
+      password: "New Password"
+      pl_password: "Please enter a new password"
+      password_conf: "Password Confirmation"
+      pl_password_conf: "Please enter a new password confirmation"
+      submit: "Update"
+    update:
+      empty: "can't be empty"
+      success: "Change password successfully"
+      failed: "Error - Unable to change password"
+      error: "Error - Not found user"
+      not_access: "You can not access this page"
   layouts:
     header:
       logo: "SUN *"
       language: "Language"
       english: "English"
       vietnam: "VietNamese"
+      profile: "Profile"
+      update_profile: "Update profile"
+      changes_password: "Change Password"
       login: "Login"
       about: "About"
       help: "Help"
