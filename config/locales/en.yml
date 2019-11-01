@@ -9,8 +9,23 @@ en:
       about: "About"
       help: "Help"
       home: "Home"
+      logout: "Logout"
     footer:
       content: " @ 2019 Sun* Inc. All rights reserved. "
+  sessions:
+    new:
+      title: "Login"
+      email: "Email"
+      pl_email: "Please enter your email"
+      pl_password: "Please enter your password"
+      password: "Password"
+      login: "Login"
+    create:
+      many_login: "Login error. Please close the browser and try again."
+      success: "Logged in successfully"
+      error: "Login failed. Email or password is incorrect."
+    destroy:
+      warning: "You are not logged in, you cannot log out. You can login again here."
   static_pages:
     home:
       title: "Home page"

@@ -9,8 +9,23 @@ vi:
       about: "Thông tin"
       help: "Hỗ trợ"
       home: "Trang chủ"
+      logout: "Đăng xuất"
     footer:
       content: " @ 2019 Sun* Inc. All rights reserved. "
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      pl_email: "Vui lòng nhập vào email"
+      pl_password: "Vui lòng nhập vào mật khẩu"
+      password: "Mật khẩu"
+      login: "Đăng nhập"
+    create:
+      many_login: "Lỗi đăng nhập. Vui lòng đóng trình duyệt và thử lại."
+      success: "Đăng nhập thành công"
+      error: "Đăng nhập thất bại. Email hoặc mật khẩu không chính xác"
+    destroy:
+      warning: "Bạn chưa đăng nhập nên không thể đăng xuất. Bạn có thể đăng nhập lại tại đây"
   static_pages:
     home:
       title: "Trang chủ"

@@ -236,7 +236,7 @@
 }
 
 .footer {
-  background: #292c2f;
+  background: $bg-footer;
   border-top: 0 solid $white;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -246,4 +246,53 @@
   color: $white;
   padding-top: 6px;
   text-align: center;
+  font-size: 18px;
+}
+
+.alert {
+  margin: 0;
+}
+
+.page-login{
+  background-image: url('login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:4px;
+  width: 100%;
+}
+
+.login-form-wrap {
+  background: radial-gradient( $white 5%, $blue 100%);
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 60px 30px;
+  text-align: center;
+
+  h1 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 36px;
+    color: $white;
+  }
+}
+
+.login-form {
+  & label{
+    font-size: 18px;
+    float:left;
+    padding-top: 30px;
+  }
+
+  .btn {
+    background: $sliver;
+    display: block;
+    margin: 60px auto 0 auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+
+    &:hover {
+      background: $aqua;
+    }
+  }
 }
