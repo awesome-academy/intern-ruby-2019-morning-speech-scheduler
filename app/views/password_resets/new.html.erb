@@ -1,0 +1,16 @@
+<%= provide :title, t(".title") %>
+<div class = "container page-login">
+  <div class = "row">
+    <div class = "col-md-4 col-md-offset-4">
+      <div class = "login-form-wrap">
+        <h1><%= t ".title" %></h1>
+        <%= form_for :password_reset, url: password_resets_path, html: {class: "login-form"} do |f| %>
+          <%= f.label :email, t(".email") %>
+          <%= f.email_field :email, class: "form-control", placeholder: t(".pl_email") %>
+
+          <%= f.submit t(".submit"), class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

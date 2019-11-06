@@ -1,12 +1,22 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :reset_token
+
+  PASSWORD_PARAMS = %i(password password_confirmation).freeze
+
+  validates :password, presence: true,
+    length: {minimum: Settings.user.password.min_length,
+      maximum: Settings.user.password.max_length}
 
   has_secure_password
 
   class << self
     def digest string
-      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST
-        : BCrypt::Engine.cost
+      if ActiveModel::SecurePassword.min_cost
+        cost = BCrypt::Engine::MIN_COST
+      else
+        cost = BCrypt::Engine.cost
+      end
+
       BCrypt::Password.create string, cost: cost
     end
 
@@ -29,5 +39,18 @@ class User < ApplicationRecord
 
   def forget
     update remember_digest: nil
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def sent_password_reset
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def check_expired?
+    reset_sent_at < Settings.user.expired.hours.ago
   end
 end

@@ -1,3 +1,8 @@
 awesome_font: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 sessions:
   remember: "1"
+user:
+  expired: 2
+  password:
+    min_length: 6
+    max_length: 20

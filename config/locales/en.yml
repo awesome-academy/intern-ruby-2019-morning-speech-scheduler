@@ -12,6 +12,27 @@ en:
       logout: "Logout"
     footer:
       content: " @ 2019 Sun* Inc. All rights reserved. "
+  password_resets:
+    new:
+      title: "Sent email reset password"
+      email: "Email"
+      pl_email: "Please enter your email"
+      submit: "Sent"
+    create:
+      success: "Email sent with password reset instructions."
+      error: "Email is incorrect."
+    edit:
+      title: "Reset Password"
+      password: "Password"
+      pl_password: "Please enter a new password"
+      confirmation: "Password Confirmation"
+      pl_confirmation: "Please enter a password confirmation"
+      submit: "Reset"
+      expired: Password reset has expired
+      not_valid: Password reset link incorrect
+      error: Error - Not found user
+    update:
+      success: "Password has been reset."
   sessions:
     new:
       title: "Login"
@@ -21,12 +42,17 @@ en:
       password: "Password"
       login: "Login"
       check_box: "Remember me on this computer"
+      reset_password: "Reset Password"
     create:
       many_login: "Login error. Please close the browser and try again."
       success: "Logged in successfully"
       error: "Login failed. Email or password is incorrect."
     destroy:
       warning: "You are not logged in, you cannot log out. You can login again here."
+  shared:
+    error_messages:
+      head: The form contains
+      error: error
   static_pages:
     home:
       title: "Home page"
@@ -68,3 +94,13 @@ for the whole society. "
       header-h2-2: "CUSTOMERS"
       header-h3-2: "Trusted by some of the world’s leading brands."
       content-2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero vel ex maximus vulputate nec eu ligula. Vestibulum elementum nisi ut fermentum lobortis. Sed quis iaculis felis."
+  mailers:
+    user_mailer:
+      hi: Hi
+      reset_subject: Password resets
+  user_mailer:
+    password_reset:
+      title: Password reset
+      to_reset: "To reset your password click the link below:"
+      time_expire: This link will expire in two hours.
+      des: If you did not request your password to be reset, please ignore this email and your password will stay as it is.
