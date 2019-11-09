@@ -1,0 +1,49 @@
+<%= provide :title, t(".title") %>
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= t ".title" %></div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "home_background.jpg", class: "responsive" %>
+        <h6 class="text-center"><%= t ".change" %></h6>
+        <input type="file" class="form-control">
+      </div>
+      <div class="col-md-8">
+        <div class="panel panel-info">
+          <div class="panel-heading"><%= t ".info" %></div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="col-md-4 text-center">
+                  <%= t ".name" %> :
+                </div>
+                <div class="col-md-8 text-center">
+                  <%= @user.name %>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-md-4 text-center">
+                  <%= t ".email" %> :
+                </div>
+                <div class="col-md-8 text-center">
+                  <%= @user.email %>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-md-4 text-center">
+                  <%= t ".group" %> :
+                </div>
+                <div class="col-md-8 text-center">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-md-offset-5">
+            <%= link_to t(".change"), edit_user_path(id: @user.id), class: "btn btn-update" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer"></div>
+</div>

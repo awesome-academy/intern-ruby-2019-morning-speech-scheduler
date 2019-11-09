@@ -1,0 +1,66 @@
+<div class="wrapper">
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h3><%= t ".morning_speech" %></h3>
+    </div>
+    <ul class="list-unstyled components">
+      <%= link_to t(".dashboard") %>
+      <li>
+        <%= link_to t(".topic1"), "#Topic1Submenu", data: {toggle: "collapse"}, aria: {expanded: "false"}, class: "dropdown-toggle" %>
+        <ul class="collapse list-unstyled" id="Topic1Submenu">
+          <li>
+            <%= link_to t(".sub1_topic1"), "#" %>
+          </li>
+          <li>
+            <%= link_to t(".sub2_topic1"), "#" %>
+          </li>
+          <li>
+            <%= link_to t(".sub3_topic1"), "#" %>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <%= link_to t(".topic2"), "#" %>
+      </li>
+      <li>
+        <%= link_to t(".topic2"), "#Topic2Submenu", data: {toggle: "collapse"}, aria: {expanded: "false"}, class: "dropdown-toggle" %>
+        <ul class="collapse list-unstyled" id="Topic2Submenu">
+          <li>
+            <%= link_to t(".sub1_topic2"), "#" %>
+          </li>
+          <li>
+            <%= link_to t(".sub2_topic2"), "#" %>
+          </li>
+          <li>
+            <%= link_to t(".sub3_topic2"), "#" %>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <%= link_to t(".topic3"), "#" %>
+      </li>
+      <li>
+        <%= link_to t(".topic4"), "#" %>
+      </li>
+    </ul>
+    <ul class="list-unstyled foot-nav">
+      <li>
+        <%= link_to t(".topic5"), "#" %>
+      </li>
+      <li>
+        <%= link_to t(".topic6"), "#" %>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button type="button" class="sidebarCollapse btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="content">
+        <%= render "layouts/flash" %>
+        <%= yield %>
+      </div>
+    </div>
+  </nav>
+</div>

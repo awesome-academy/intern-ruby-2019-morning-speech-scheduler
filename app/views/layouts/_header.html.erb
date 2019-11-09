@@ -13,29 +13,36 @@
   </div>
   <% if logged_in? %>
     <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-fw fa-user"></i><%= current_user.name %>
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <%= link_to t(".logout"), logout_path, method: :delete %>
+      <button class="dropbtn"><i class="fa fa-fw fa-user"></i><%= current_user.name %>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <%= link_to t(".logout"), logout_path, method: :delete %>
+      </div>
     </div>
-  </div>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-bell"></i><i class="fa fa-caret-down"><%= t ".notification" %></i>
+      </button>
+      <div class="dropdown-content">
+        <%= link_to t(".notification"), "#" %>
+      </div>
+    </div>
   <% else %>
     <%= link_to login_path do %>
       <i class="fa fa-fw fa-user"></i>
       <%= t ".login" %>
     <% end %>
-  <% end %>
-  <%= link_to about_path do %>
-    <i class="fa fa-info-circle"></i>
-    <%= t ".about" %>
-  <% end %>
-  <%= link_to help_path do %>
-    <i class="fa fa-question-circle"></i>
-    <%= t ".help" %>
-  <% end %>
-  <%= link_to root_path do %>
-    <i class="fa fa-fw fa-home"></i>
-    <%= t ".home" %>
+    <%= link_to about_path do %>
+      <i class="fa fa-info-circle"></i>
+      <%= t ".about" %>
+    <% end %>
+    <%= link_to help_path do %>
+      <i class="fa fa-question-circle"></i>
+      <%= t ".help" %>
+    <% end %>
+    <%= link_to root_path do %>
+      <i class="fa fa-fw fa-home"></i>
+      <%= t ".home" %>
+    <% end %>
   <% end %>
 </div>

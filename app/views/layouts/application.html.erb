@@ -12,8 +12,12 @@
 
   <body>
     <%= render "layouts/header" %>
-    <%= render "layouts/flash" %>
-    <%= yield %>
+    <% if logged_in? %>
+      <%= render "layouts/sidebar" %>
+    <% else %>
+      <%= render "layouts/flash" %>
+      <%= yield %>
+    <% end %>
     <%= render "layouts/footer" %>
   </body>
 </html>
