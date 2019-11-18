@@ -112,3 +112,12 @@ for the whole society. "
       name: "Name"
       email: "Email"
       group: "Group"
+    edit:
+      title: "Update user Infomation"
+      name: "Name"
+      pl_name: "Please enter your name"
+      submit: "Update"
+    update:
+      success: "Update user information successfully"
+      failed: "Error - Unable to update user information"
+      not_access: "You can not access this page"

@@ -6,3 +6,7 @@ user:
   password:
     min_length: 6
     max_length: 20
+user:
+  name:
+    min_length: 3
+    max_length: 255
