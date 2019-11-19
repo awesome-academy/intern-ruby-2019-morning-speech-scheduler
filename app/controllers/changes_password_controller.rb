@@ -1,23 +1,10 @@
-class UsersController < ApplicationController
-  before_action :load_user, only: %i(show edit update)
-  before_action :correct_user, only: %i(edit update)
-
-  def show; end
+class ChangesPasswordController < ApplicationController
+  before_action :load_user, :correct_user, only: %i(edit update)
 
   def edit; end
 
   def update
-    if @user.update_attributes update_params
-      flash[:success] = t ".success"
-      redirect_to @user
-    else
-      flash[:danger] = t ".failed"
-      render :edit
-    end
-  end
-
-  def update
-    if @user.update_attributes update_params
+    if @user.authenticate(params[:user][:password_old]) && @user.update(update_params)
       flash[:success] = t ".success"
       redirect_to @user
     else
@@ -29,7 +16,7 @@ class UsersController < ApplicationController
   private
 
   def update_params
-    params.require(:user).permit User::UPDATE_PARAMS
+    params.require(:user).permit User::PASSWORD_PARAMS
   end
 
   def load_user

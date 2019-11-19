@@ -17,6 +17,9 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
+        <%= link_to t(".profile"), current_user %>
+        <%= link_to t(".update_profile"), edit_user_path(current_user) %>
+        <%= link_to t(".change_password"), edit_changes_password_path(current_user.id) %>
         <%= link_to t(".logout"), logout_path, method: :delete %>
       </div>
     </div>

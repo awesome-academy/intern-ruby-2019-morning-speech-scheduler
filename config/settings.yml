@@ -3,10 +3,12 @@ sessions:
   remember: "1"
 user:
   expired: 2
+  name:
+    min_length: 3
+    max_length: 250
+  email:
+    max_length: 250
+    regex_valid: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   password:
     min_length: 6
     max_length: 20
-user:
-  name:
-    min_length: 3
-    max_length: 255

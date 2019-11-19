@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     delete "/logout", to: "sessions#destroy"
 
     resources :password_resets, except: %i(index show destroy)
-    resources :users
+    resources :users do
+      collection do
+        resources :changes_password, only: %i(edit update)
+      end
+    end
   end
 end

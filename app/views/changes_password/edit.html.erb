@@ -1,0 +1,27 @@
+<% provide :title, t(".title") %>
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= t ".title" %></div>
+  <div class="panel-body">
+    <div class="col-md-8 col-md-offset-2">
+      <%= form_for @user, url: changes_password_path(params[:id]), html: {class: "login-form"} do |f| %>
+        <%= render "shared/error_messages", object: f.object %>
+
+        <%= hidden_field_tag :email, @user.email %>
+
+        <%= f.label :password_old, t(".password_old") %>
+        <%= f.password_field :password_old, class: "form-control", placeholder: t(".pl_password_old") %>
+
+        <%= f.label :password, t(".password") %>
+        <%= f.password_field :password, class: "form-control", placeholder: t(".pl_password") %>
+
+        <%= f.label :password_confirmation, t(".password_conf") %>
+        <%= f.password_field :password_confirmation, class: "form-control", placeholder: t(".pl_password_conf") %>
+
+        <div class="col-md-4 col-md-offset-4">
+          <%= f.submit t(".submit"), class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="panel-footer"></div>
+</div>
