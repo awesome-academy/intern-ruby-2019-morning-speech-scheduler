@@ -14,5 +14,6 @@ Rails.application.routes.draw do
         resources :changes_password, only: %i(edit update)
       end
     end
+    resources :morning_speech_schedule
   end
 end

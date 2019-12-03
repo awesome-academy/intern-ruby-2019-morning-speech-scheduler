@@ -16,16 +16,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def update
-    if @user.update_attributes update_params
-      flash[:success] = t ".success"
-      redirect_to @user
-    else
-      flash[:danger] = t ".failed"
-      render :edit
-    end
-  end
-
   private
 
   def update_params

@@ -15,6 +15,8 @@ en:
       failed: "Error - Unable to change password"
       error: "Error - Not found user"
       not_access: "You can not access this page"
+  calendar:
+    ms: "morning speech"
   layouts:
     header:
       logo: "SUN *"
@@ -52,6 +54,24 @@ en:
       error: Error - Not found user
     update:
       success: "Password has been reset."
+    sidebar:
+      dashboard: "Dash Board"
+      calendar: "Calendar"
+      create_schedule: "Craete morning speech schedule"
+    footer:
+      content: " @ 2019 Sun* Inc. All rights reserved. "
+  morning_speech_schedule:
+    index:
+      title: "General Calendar"
+      calendar: "Calendar"
+    new:
+      title: "Create new morning speech schedule"
+      start: "Start time"
+      end: "End time"
+      submit: "Create"
+    create:
+      success: "Morning speech scheduler create successfully"
+      failed: "Error - Unable create morning speech scheduler"
   sessions:
     new:
       title: "Login"
