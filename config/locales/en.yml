@@ -17,6 +17,8 @@ en:
       not_access: "You can not access this page"
   calendar:
     ms: "morning speech"
+    success: "success"
+    danger: "danger"
   layouts:
     header:
       logo: "SUN *"
@@ -31,6 +33,10 @@ en:
       help: "Help"
       home: "Home"
       logout: "Logout"
+    sidebar:
+      dashboard: "Dash Board"
+      calendar: "Calendar"
+      create_schedule: "Craete morning speech schedule"
     footer:
       content: " @ 2019 Sun* Inc. All rights reserved. "
   password_resets:
@@ -64,14 +70,25 @@ en:
     index:
       title: "General Calendar"
       calendar: "Calendar"
+      success: "Morning speech scheduler loaded successfully"
+      failed: "Error - Unable load morning speech scheduler"
     new:
       title: "Create new morning speech schedule"
       start: "Start time"
       end: "End time"
       submit: "Create"
     create:
+      confirm: "Are you sure you want to create a new morning speech schedule ?"
       success: "Morning speech scheduler create successfully"
       failed: "Error - Unable create morning speech scheduler"
+    update:
+      confirm: "Are you sure you want to change this morning speech schedule ?"
+      success: "Morning speech scheduler updated successfully"
+      failed: "Error - Unable update morning speech scheduler"
+    delete:
+      confirm: "Are you sure you want to delete the schedule for this morning speech?"
+      success: "Morning speech scheduler deleted successfully"
+      failed: "Error - Unable delete morning speech scheduler"
   sessions:
     new:
       title: "Login"

@@ -17,6 +17,8 @@ vi:
       not_access: "Bạn không có quyền truy cập trang này"
   calendar:
     ms: "morning speech"
+    success: "success"
+    danger: "danger"
   layouts:
     header:
       logo: "SUN *"
@@ -31,6 +33,10 @@ vi:
       help: "Hỗ trợ"
       home: "Trang chủ"
       logout: "Đăng xuất"
+    sidebar:
+      dashboard: "Bảng điều khiển"
+      calendar: "Lịch"
+      create_schedule: "Tạo lịch morning speech"
     footer:
       content: " @ 2019 Sun* Inc. All rights reserved. "
   password_resets:
@@ -64,14 +70,25 @@ vi:
     index:
       title: "Lịch chung"
       calendar: "Lịch"
+      success: "Lịch morning speech được load thành công"
+      failed: "Lỗi - không thể load được lịch morning speech"
     new:
       title: "Taọ mới lịch morning speech"
       start: "Thời gian bắt đầu"
       end: "Thời gian kết thúc"
       submit: "Tạo"
     create:
+      confirm: "Bạn có muốn tạo mới một lịch morning speech không ?"
       success: "Lịch morning speech được tạo thành công"
       failed: "Lỗi - không thể tạo được lịch morning speech"
+    update:
+      confirm: "Bạn có muốn cập nhật lịch morning speech này không ?"
+      success: "Lịch morning speech được cập nhật thành công"
+      failed: "Lỗi - không thể cập nhật được lịch morning speech"
+    delete:
+      confirm: "Bạn có muốn xóa lịch morning speech này không ?"
+      success: "Lịch morning speech được xóa thành công"
+      failed: "Lỗi - không thể xóa được lịch morning speech"
   sessions:
     new:
       title: "Đăng nhập"
